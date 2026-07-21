@@ -8,7 +8,7 @@ export const achievements: Achievement[] = [
     description: 'Architecting enterprise mobile since 2015.',
   },
   {
-    value: 100,
+    value: 50,
     suffix: '+',
     label: 'Applications Delivered',
     description: 'Across AgriTech, insurance, ERP and commerce.',

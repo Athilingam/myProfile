@@ -11,9 +11,10 @@ import { RotatingTitle } from '@/components/sections/rotating-title';
 
 const marquee = [
   'React Native',
+  'Flutter',
+  'iOS · Android',
   'Clean Architecture',
   'AI-Assisted Dev',
-  'iOS · Android',
   'Node.js',
   'Offline-First',
   'TypeScript',
