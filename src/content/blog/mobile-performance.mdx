@@ -1,0 +1,25 @@
+---
+title: 'The Perceived-Performance Playbook for Mobile'
+description: 'Practical techniques that make enterprise mobile apps feel fast, even on modest devices.'
+date: '2026-04-22'
+category: 'Performance'
+tags: ['Mobile Performance', 'React Native', 'UX']
+---
+
+Users do not measure milliseconds — they feel responsiveness. Optimizing perceived performance is often higher leverage than raw speed.
+
+## Render less, later
+
+Virtualize long lists, defer off-screen work, and split heavy screens. The fastest render is the one you never do. On dense CRM dashboards, windowing alone transformed scroll smoothness.
+
+## Optimistic UI
+
+When an action is very likely to succeed, update the UI immediately and reconcile in the background. The app feels instant, and the rare failure is handled gracefully. A well-designed API and cache layer is the single biggest lever here.
+
+## Cache like you mean it
+
+RTK Query with sensible invalidation means most navigations are instant because the data is already there. Treat the cache as a first-class part of the architecture, not an afterthought.
+
+## Measure what users feel
+
+Time-to-interactive and input latency matter more than synthetic benchmarks. Watch the metrics that map to how the app feels in the hand.

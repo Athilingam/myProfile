@@ -1,0 +1,25 @@
+---
+title: 'Offline-First Is an Architecture, Not a Feature'
+description: 'Lessons from a decade of building field apps that work with zero connectivity and never lose data.'
+date: '2026-05-30'
+category: 'Offline First'
+tags: ['Offline First', 'Sync', 'SQLite']
+---
+
+For ten years I built AgriTech apps used in fields with no signal. The apps could not assume the network existed — and that single constraint reshaped every layer.
+
+## Capture locally, always
+
+Every write hits local SQLite first and returns immediately. The UI never waits on the network. This makes the app feel instant, and it means a dropped connection is a non-event rather than a crisis.
+
+## Sync must be idempotent
+
+When connectivity returns, a durable, ordered queue replays operations to the server. The golden rule: replaying the same operation twice must be safe. Idempotent endpoints and client-generated IDs make retries boring, which is exactly what you want.
+
+## Conflicts are a product decision
+
+Two agents editing the same record is not just a technical problem. Last-write-wins, merge, or manual resolution — each is a product choice with real consequences. Decide it deliberately, per entity, not by accident in a catch block.
+
+## The payoff
+
+Across 50+ apps and 15+ countries, the offline-first foundation is why field teams trusted the data. No lost registrations, no phantom procurement records — just apps that worked wherever the work happened.

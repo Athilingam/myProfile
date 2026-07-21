@@ -1,0 +1,28 @@
+---
+title: 'Clean Architecture in React Native at Enterprise Scale'
+description: 'How clean architecture keeps large React Native apps testable, portable and resilient as modules multiply.'
+date: '2026-06-18'
+category: 'Architecture'
+tags: ['React Native', 'Clean Architecture', 'MVVM']
+---
+
+Most React Native apps start simple and get messy fast. Screens fetch their own data, business rules leak into components, and six months in every change feels risky. Clean architecture is how I keep enterprise apps calm as they grow.
+
+## The core idea
+
+Business rules sit at the center and depend on nothing. Frameworks, UI and data sources point inward — never the other way around. In practice I split the app into four layers.
+
+- **Presentation** — screens, components and MVVM view-models.
+- **Domain** — use-cases and entities, pure TypeScript with zero framework imports.
+- **Data** — repositories, DTOs and mappers.
+- **Infrastructure** — REST clients, local database, device APIs.
+
+## Why it pays off
+
+On the Insurance Agent Management platform, modules multiplied quickly: CRM, leads, quotes, loans, analytics. Because domain logic never depended on React Native, each new module was mostly composition, and unit tests covered the rules without spinning up a renderer.
+
+> Great mobile architecture is invisible. Users just feel that the app is fast, reliable and always ready.
+
+## Where teams get it wrong
+
+The most common mistake is treating clean architecture as folder theater — the right folders, but view-models that still call `fetch` directly. The discipline is in the dependency direction, not the directory names. Keep the domain pure and the rest follows.

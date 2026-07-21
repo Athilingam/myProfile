@@ -1,0 +1,70 @@
+{
+  "name": "athilingam-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Premium portfolio of Athilingam Subramanian — AI Mobile Solutions Architect.",
+  "author": "Athilingam Subramanian <athimca11@gmail.com>",
+  "license": "UNLICENSED",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md,mdx,json,css}\"",
+    "format:check": "prettier --check \"**/*.{ts,tsx,md,mdx,json,css}\"",
+    "typecheck": "tsc --noEmit",
+    "clean": "rm -rf .next out dist coverage .turbo *.tsbuildinfo",
+    "clean:all": "rm -rf .next out dist coverage .turbo *.tsbuildinfo node_modules",
+    "prepare": "husky"
+  },
+  "dependencies": {
+    "@vercel/analytics": "^1.4.1",
+    "@vercel/speed-insights": "^1.1.0",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "framer-motion": "^11.15.0",
+    "geist": "^1.3.1",
+    "gray-matter": "^4.0.3",
+    "lucide-react": "^0.469.0",
+    "next": "15.5.7",
+    "next-mdx-remote": "^5.0.0",
+    "next-themes": "^0.4.4",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-icons": "^5.4.0",
+    "tailwind-merge": "^2.6.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.6.1",
+    "@commitlint/config-conventional": "^19.6.0",
+    "@eslint/eslintrc": "^3.2.0",
+    "@types/mdx": "^2.0.13",
+    "@types/node": "^22.10.5",
+    "@types/react": "^19.0.7",
+    "@types/react-dom": "^19.0.3",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^9.18.0",
+    "eslint-config-next": "15.5.7",
+    "eslint-config-prettier": "^9.1.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.3.0",
+    "postcss": "^8.4.49",
+    "prettier": "^3.4.2",
+    "prettier-plugin-tailwindcss": "^0.6.9",
+    "tailwindcss": "^3.4.17",
+    "tailwindcss-animate": "^1.0.7",
+    "typescript": "^5.7.3"
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{json,css,md,mdx}": [
+      "prettier --write"
+    ]
+  },
+  "engines": {
+    "node": ">=18.18.0"
+  }
+}
