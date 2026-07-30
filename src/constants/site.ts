@@ -20,7 +20,7 @@ export const siteConfig = {
   phone: '+91 807-235-8960',
   phoneHref: 'tel:+918072358960',
   location: 'Tirunelveli, Tamil Nadu, India',
-  resume: '/Athilingam_Subramanian_Resume.pdf',
+  resume: '/Athilingam_Subramanian_Resume 2.pdf',
   ogImage: '/opengraph-image',
   calendly: 'https://calendly.com/athilingam',
   keywords: [
@@ -78,8 +78,8 @@ export const socialLinks: SocialLink[] = [
   },
   {
     label: 'LinkedIn',
-    href: 'https://linkedin.com/in/athilingam-s',
-    handle: 'linkedin.com/in/athilingam-s',
+    href: 'https://linkedin.com/in/athilingam',
+    handle: 'linkedin.com/in/athilingam',
     icon: 'linkedin',
   },
   {

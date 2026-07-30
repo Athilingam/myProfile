@@ -70,7 +70,7 @@ WebSite, BreadcrumbList, BlogPosting).
 - **Content** — edit files in `src/data/*` and `src/content/blog/*.mdx`.
 - **Links / identity** — `src/constants/site.ts`.
 - **Theme tokens** — `tailwind.config.ts` and `src/styles/globals.css`.
-- **Photo / resume** — replace `public/profile.png` and `public/Athilingam_Subramanian_Resume.pdf`.
+- **Photo / resume** — replace `public/profile.png` and `public/Athilingam_Subramanian_Resume 2.pdf`.
 
 ## Deploy
 
