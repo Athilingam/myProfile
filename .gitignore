@@ -95,3 +95,6 @@ $RECYCLE.BIN/
 /tmp
 /temp
 /.scratch
+node_modules/
+node_modules/ git rm -r --cached node_modules
+node_modules/
